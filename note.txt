@@ -1,0 +1,25 @@
+1) create docker-compose.yml
+2) create Dockerfile
+3) create src folder
+4) create mysql folder
+5) create nginx folder
+6) into nginx folder create default.cfg file
+7) run command 
+*****************
+linux sudo docker-compose build && docker-compose up -docker
+after this 
+if have problem with permssion 
+enter via bash to container nginx
+docker exec-it <container_name> /bin/bash || /bin/sh
+
+
+************
+if you want to install laravel
+into src folder
+composer create-project laravel/laravel .
+
+*************
+go to the location where storage and bootstrap and
+run those command
+chmod -R 775 storage
+chmod -R 775 bootstrap/cache
